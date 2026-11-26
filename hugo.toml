@@ -1,0 +1,97 @@
+# 站点基础配置
+baseURL = "https://Yuuuko-r.github.io/blog/"
+title = "任思洁的博客"
+theme = "PaperMod"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+enableRobotsTXT = true
+summaryLength = 40
+timeZone = "Asia/Shanghai"
+
+# 分页
+[pagination]
+  pagerSize = 6
+
+# 关键：让首页额外输出 JSON，供搜索页的 index.json 使用
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = false
+    noClasses = false
+    style = "monokai"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[params]
+  env = "production"
+  description = "任思洁的个人博客 · 道路桥梁与渡河工程 · Linux 学习记录"
+  keywords = ["Linux", "Hugo", "PaperMod", "博客", "任思洁"]
+  author = "任思洁"
+  dateFormat = "2006-01-02"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+  UseHugoToc = true
+
+  [params.homeInfoParams]
+    Title = "你好，我是任思洁 👋"
+    Content = """
+长安大学公路学院 **道路桥梁与渡河工程** 专业学生，平时喜欢把学过的东西整理成笔记。
+
+这个博客记录我的 Linux 课程学习过程：从常用命令、权限管理，到 Shell 脚本、文本处理三剑客，再到用 Hugo 在 Linux 上把这个站点搭起来。
+"""
+
+  [[params.socialIcons]]
+      name = "github"
+      url = "https://github.com/Yuuuko-r"
+    [[params.socialIcons]]
+      name = "rss"
+      url = "/index.xml"
+
+# 顶部导航菜单：首页 / 关于 / 标签 / 分类 / 归档 / 搜索
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 40
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 50
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 60
