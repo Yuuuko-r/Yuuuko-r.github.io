@@ -1,5 +1,5 @@
 # 站点基础配置
-baseURL = "https://Yuuuko-r.github.io/blog/"
+baseURL = "https://Yuuuko-r.github.io/"
 title = "任思洁的博客"
 theme = "PaperMod"
 languageCode = "zh-cn"

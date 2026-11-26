@@ -13,7 +13,7 @@ summary: "从零开始在 Ubuntu 虚拟机里安装 Hugo、用 git submodule 引
 
 - 宿主机：Windows 10，VirtualBox 7
 - 虚拟机：Ubuntu 20.04.6 LTS，主机名 `node1`，IP `192.168.56.101`（host-only 网卡）
-- Hugo：v0.158.0 extended
+- Hugo：v0.145.0 extended
 - 主题：[PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 
 ## 二、安装 Hugo
@@ -21,8 +21,8 @@ summary: "从零开始在 Ubuntu 虚拟机里安装 Hugo、用 git submodule 引
 Ubuntu 自带源里的 Hugo 版本太老（0.68），PaperMod 用不了，所以直接下官方二进制：
 
 ```bash
-wget https://github.com/gohugoio/hugo/releases/download/v0.158.0/hugo_extended_0.158.0_linux-amd64.tar.gz
-tar xzf hugo_extended_0.158.0_linux-amd64.tar.gz
+wget https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_linux-amd64.tar.gz
+tar xzf hugo_extended_0.145.0_linux-amd64.tar.gz
 sudo install -m 755 hugo /usr/local/bin/hugo
 hugo version
 ```
