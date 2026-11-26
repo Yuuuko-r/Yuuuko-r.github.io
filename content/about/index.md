@@ -7,7 +7,7 @@ ShowBreadCrumbs: true
 comments: false
 ---
 
-![任思洁](avatar.jpg)
+<img src="avatar.jpg" alt="任思洁的个人照片" width="200" style="border-radius:6px; margin-right: 24px;" />
 
 ## 任思洁
 
